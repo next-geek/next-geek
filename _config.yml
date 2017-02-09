@@ -9,14 +9,14 @@ menu:
   #commonweal: /404.html
 
 
-  # menu_icons:
-  #     enable: true
-  #     # icon mapping, icon_name = icon name in fontawesome
-  #     home: bank
-  #     categories: th
-  #     tags: tags
-  #     archives: archive
-  #     about: user
+# menu_icons:
+#     enable: true
+#     # icon mapping, icon_name = icon name in fontawesome
+#     home: bank
+#     categories: th
+#     tags: tags
+#     archives: archive
+#     about: user
 
 # Place your favicon.ico to /source directory.
 favicon: /favicon.ico
@@ -51,10 +51,11 @@ mathjax:
 scheme: Mala
 
 
-# Sidebar, available value:
+# Sidebar diplay, available value:
 #  - post    expand on posts automatically. Default.
 #  - always  expand for all pages automatically
 #  - hide    expand only when click on the sidebar toggle icon.
+#  - remove  remove this sidebar
 sidebar: post
 #sidebar: always
 #sidebar: hide

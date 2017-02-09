@@ -14,8 +14,6 @@
 > git clone https://github.com/Gabirel/next-geek.git
 
 
-4. 
-> modify the global `_config.yml` => `theme: next-geek`
+4. modify the global `_config.yml` => `theme: next-geek`
 
-5. 
-> modify `themes/next-geek/_config.yml` => `scheme: Mala`
+5. modify `themes/next-geek/_config.yml` => `scheme: Mala`

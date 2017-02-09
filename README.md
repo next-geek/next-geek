@@ -7,12 +7,15 @@
 
 ## Usage
 
-1.cd `/themes`
+1. 
+> cd `/themes`
 
-2.git clone -b magiclamp git@github.com:idhyt/hexo-theme-next.git
+2. 
+> git clone https://github.com/Gabirel/next-geek.git
 
-3.mv hexo-theme-next magiclamp
 
-4.modify `_config.yml` => `theme: magiclamp`
+4. 
+> modify the global `_config.yml` => `theme: next-geek`
 
-5.modify `themes/magiclamp/_config.yml` => `scheme: Mala`
+5. 
+> modify `themes/next-geek/_config.yml` => `scheme: Mala`

@@ -7,11 +7,9 @@
 
 ## Usage
 
-1. 
-> cd `/themes`
+1.  cd `/themes`
 
-2. 
-> git clone https://github.com/Gabirel/next-geek.git
+2. > git clone https://github.com/Gabirel/next-geek.git
 
 
 4. modify the global `_config.yml` => `theme: next-geek`

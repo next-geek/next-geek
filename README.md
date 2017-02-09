@@ -15,3 +15,8 @@
 4. modify the global `_config.yml` => `theme: next-geek`
 
 5. modify `themes/next-geek/_config.yml` => `scheme: Mala`
+
+
+## Document
+
+[How to configure by yourself](http://theme-next.iissnan.com/)

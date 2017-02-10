@@ -26,6 +26,21 @@ social:
   Weibo: http://weibo.com/3221995293/profile?topnav=1&wvr=6
   Twitter: https://twitter.com/Gabirel_F
 
+# social icons in Font Awesome
+social_icons:
+  enable: true
+  # icons mapping
+  GitHub: github
+  Weibo: weibo
+  Twitter: twitter
+
+
+# Friends links
+links_title: Links
+links:
+    Test: https://test.test
+
+
 # Set default keywords (Use a comma to separate)
 keywords: "Hexo,Mala"
 

@@ -8,7 +8,6 @@ menu:
   search: /search
   #commonweal: /404.html
 
-
 # menu_icons:
 #     enable: true
 #     # icon mapping, icon_name = icon name in fontawesome
@@ -21,12 +20,18 @@ menu:
 # Place your favicon.ico to /source directory.
 favicon: /favicon.ico
 
+# Social links
+social: 
+  GitHub: https://github.com/Gabirel
+  微博: http://weibo.com/3221995293/profile?topnav=1&wvr=6
+
 # Set default keywords (Use a comma to separate)
 keywords: "Hexo,Mala"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
+# Default: enabled
 rss:
 
 # Icon fonts

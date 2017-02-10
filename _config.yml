@@ -125,7 +125,7 @@ donate:
   alipay: http://o7keinrz4.bkt.clouddn.com/alipay.jpg
 
 # 不蒜子统计
-busuanzi: true
+busuanzi: false
 
 # Static files
 vendors: vendors

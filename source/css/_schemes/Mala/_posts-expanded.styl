@@ -33,7 +33,9 @@
     text-align: left;
     a {
       padding: 1px 5px;
-      background: $whitesmoke;
+      //background: $whitesmoke;
+      background: $post-tags-bg-color;
+      color: $post-tags-text-color;
       border-bottom: none;
     }
     a:hover { background: $grey-light; }
@@ -61,4 +63,22 @@
 
     &:hover { border-bottom-color: $black-deep; }
   }
+}
+
+//read more
+.post-more-link {
+    margin-top: 20px;
+    text-align: left;
+
+    a {
+        padding: 0;
+        font-size: 16px;
+        color: $grey-dim;
+        background: none;
+        border: none;
+        border-bottom: 2px solid $grey-dim;
+        transition-property: border;
+
+        &:hover { border-bottom-color: $black-deep; }
+    }
 }

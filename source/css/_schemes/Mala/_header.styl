@@ -1,6 +1,7 @@
 // Header
 // --------------------------------------------------
-.header { background: $whitesmoke; }
+//.header { background: $whitesmoke; }
+.header { background: $header-bg-color; }
 .header-inner {
   padding: 25px 0 20px;
   clearfix();
@@ -23,6 +24,7 @@
 
   .brand {
     padding: 2px 1px;
+    color: $header-brand-color;
     background: none;
 
     +mobile() { display: block; }
@@ -52,7 +54,8 @@
     position: relative;
     display: block;
     height: 2px;
-    background: $black-deep;
+    //background: $black-deep;
+    background: $header-brand-color;
     +mobile() { height: 3px; }
   }
 }

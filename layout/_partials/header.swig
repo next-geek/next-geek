@@ -10,9 +10,13 @@
 
   <div class="custom-logo-site-title">
     <a href="{{ config.root }}"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
+        <span class="logo-line-before">
+            <i class="" style="transform: translateX(-100%);"></i>
+        </span>
       <span class="site-title">{{ config.title }}</span>
-      <span class="logo-line-after"><i></i></span>
+      <span class="logo-line-after">
+          <i class="" style="transform: translateX(-100%);"></i>
+      </span>
     </a>
   </div>
     {% if theme.seo %}

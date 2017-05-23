@@ -247,6 +247,9 @@ custom_logo:
   enabled: false
   image:
 
+# Some suprise plugs
+suprise:
+  ball: true
 
 # Code Highlight theme
 # Available value:

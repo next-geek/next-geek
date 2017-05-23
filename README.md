@@ -1,3 +1,7 @@
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/Gabirel/next-geek.svg)](http://isitmaintained.com/project/Gabirel/next-geek "Average time to resolve an issue")
+
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/Gabirel/next-geek.svg)](http://isitmaintained.com/project/Gabirel/next-geek "Percentage of issues still open")
+
 # NexT
 
 > 精于心，简于形

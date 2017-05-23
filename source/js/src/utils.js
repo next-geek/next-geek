@@ -186,6 +186,10 @@ NexT.utils = NexT.$u = {
     return CONFIG.scheme === 'Pisces';
   },
 
+  isMala: function () {
+    return CONFIG.scheme === 'Mala';
+  },
+
   getScrollbarWidth: function () {
     var $div = $('<div />').addClass('scrollbar-measure').prependTo('body');
     var div = $div[0];

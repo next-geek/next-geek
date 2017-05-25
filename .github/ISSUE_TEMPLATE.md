@@ -1,11 +1,11 @@
 
-### Expected behavior (预期行为)
+### Expected behavior, English is recommended
 
 
-### Actual behavior (实际行为)
+### Actual behavior
 
 
-### Steps to reproduce the behavior (重现步骤)
+### Steps to reproduce the behavior
 
 
 ### NexT Information
@@ -23,6 +23,7 @@ NexT Scheme:
   -  Muse
   -  Mist
   -  Pisces
+  -  Mala
 
 ### Other Information (Like Browser, System, Screenshots)
 

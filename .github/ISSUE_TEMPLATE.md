@@ -8,7 +8,7 @@
 ### Steps to reproduce the behavior
 
 
-### NexT Informations
+### NexT Information
 
 Add the  ✔  sign before an item which is affected by this behavior.
 
@@ -25,6 +25,6 @@ NexT Scheme:
   -  Pisces
   -  Mala
 
-### Other Informations (Like Browser, System, Screenshots)
+### Other Information (Like Browser, System, Screenshots)
 
 

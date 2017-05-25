@@ -457,8 +457,6 @@ calendar:
   singleEvents: true
   maxResults: 250
 
-local_search:
-  enable: true
 # Algolia Search
 algolia_search:
   enable: true

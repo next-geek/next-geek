@@ -16,6 +16,12 @@
   .post-meta {
     margin-top: 5px;
     margin-bottom: 20px;
+    .post-category a{
+      color: $green-brighter;
+      :hover {
+         color: $brown-yellow;
+      }
+    }
   }
 
   .post-title {
@@ -83,11 +89,70 @@
     }
 }
 
-// Read moore button
-.post-button .btn
-  color $grey-dim
-  font-size 16px
+// Post title link
+.posts-expand .post-title-link
+  color $gray-lighter
+  &::before
+    background-color: $blue-bright
+
+
+// Post body CSS
+.post-body a
+  display inline-block
+  position relative
+  color $post-body-link-color
+  border-bottom none
+  line-height 2
+  vertical-align top
+  &::before 
+    content ""
+    position absolute
+    width 100%
+    height 2px
+    bottom 3px
+    left 0
+    background-color $blue-bright
+    visibility hidden
+    transform scaleX(0)
+    the-transition()
+
+  &:hover::before 
+    visibility visible
+    transform scaleX(1)
+
   &:hover
     background none
     color $gray-lighter
-    border-bottom 2px solid $blue-bright
+  .fa
+    font-size 16px
+
+// Read moore button
+.post-button .btn
+  font-size 16px
+  display inline-block
+  position relative
+  color $grey-dim
+  border-bottom none
+  line-height 1.2
+  vertical-align top
+  &::before 
+    content ""
+    position absolute
+    width 100%
+    height 2px
+    bottom 0
+    left 0
+    background-color $blue-bright
+    visibility hidden
+    transform scaleX(0)
+    the-transition()
+
+  &:hover::before 
+    visibility visible
+    transform scaleX(1)
+
+  &:hover
+    background none
+    color $gray-lighter
+  .fa
+    font-size 16px

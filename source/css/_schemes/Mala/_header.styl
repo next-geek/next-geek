@@ -1,7 +1,12 @@
 // Header
 // --------------------------------------------------
 //.header { background: $whitesmoke; }
-.header { background: $header-bg-color; }
+.header { 
+  background: $header-bg-color;
+  ::selection {
+    background: none;
+  }  
+}
 .header-inner {
   padding: 25px 0 20px;
   clearfix();

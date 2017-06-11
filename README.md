@@ -1,15 +1,15 @@
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/Gabirel/next-geek.svg)](http://isitmaintained.com/project/Gabirel/next-geek "Average time to resolve an issue")
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/Gabirel/next-geek.svg)](http://isitmaintained.com/project/Gabirel/next-geek "Percentage of issues still open")
 
-# NexT
+# NexT Geek
 
-> 精于心，简于形
+> 极客版NexT，重新设计过的黑色版
 
-<a href="http://notes.iissnan.com" target="_blank">在线预览 Preview</a> | <a href="http://theme-next.iissnan.com" target="_blank">NexT 使用文档</a> |  [English Documentation](README.en.md)
+<a href="https://godeep.pro" target="_blank">在线预览 Preview</a> | <a href="http://theme-next.iissnan.com" target="_blank">NexT 使用文档</a> |  [English Documentation](README.en.md)
 
 [![Join the chat at https://gitter.im/iissnan/hexo-theme-next](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/iissnan/hexo-theme-next?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-![NexT Schemes](http://iissnan.com/nexus/next/next-schemes.jpg)
+![NexT Geek](https://user-images.githubusercontent.com/12933851/27010390-13f605ce-4ed6-11e7-9d04-03774583cf19.png)
 
 
 ## 浏览器支持 Browser support

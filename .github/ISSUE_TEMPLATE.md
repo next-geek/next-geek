@@ -26,5 +26,3 @@ NexT Scheme:
   -  Mala
 
 ### Other Information (Like Browser, System, Screenshots)
-
-

@@ -75,4 +75,4 @@
   {% endif %}
 </nav>
 
-{% include '../_custom/header.swig' %}
+{% include '../_custom/lang-switch.swig' %}

@@ -7,9 +7,14 @@
 @import "_header";
 @import "_logo";
 @import "_menu";
-@import "_search.styl";
+@import "_search";
+@import "_suprise";
 @import "_posts-expanded";
+@import "_posts-callapsed";
+@import "_posts-copyright";
+@import "_posts-footer";
 @import "sidebar/sidebar-blogroll";
+@import "_footer";
 
 
 // Components
@@ -44,7 +49,6 @@
   +mobile() { width: auto; }
 }
 
-
 // Page - Post details
 // --------------------------------------------------
 .page-post-detail {
@@ -77,6 +81,9 @@
   //background: $whitesmoke;
   background: $footer-bg-color;
   color: $grey-dim;
+  ::selection {
+    background: none;
+  }
 }
 .footer-inner {
   margin: 0 auto;

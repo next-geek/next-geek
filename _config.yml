@@ -6,7 +6,7 @@
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "Go Deep"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -46,9 +46,9 @@ index_with_subtitle: false
 menu:
   home: /
   categories: /categories
-  about: /about
   archives: /archives
   tags: /tags
+  about: /about
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 
@@ -141,8 +141,9 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
-  #LinkLabel: Link
+social:
+  GitHub: https://github.com/Gabirel
+  Twitter: https://twitter.com/GabrielDeVaa
 
 
 # Social Links Icons
@@ -156,7 +157,6 @@ social_icons:
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
   Twitter: twitter
-  Weibo: weibo
 
 
 # Sidebar Avatar
@@ -207,10 +207,11 @@ sidebar:
 
 
 # Blog rolls
-#links_title: Links
+links_title: Links
 #links_layout: block
 #links_layout: inline
-#links:
+links:
+  y0uz: https://blog.timewhile.com/
   #Title: http://example.com/
 
 
@@ -255,9 +256,9 @@ post_wordcount:
 
 # Declare license on posts
 post_copyright:
-  enable: false
-  license: CC BY-NC-SA 3.0
-  license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
+  enable: true
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 
 
@@ -282,7 +283,7 @@ suprise:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: night eighties
+highlight_theme: night bright
 
 # ---------------------------------------------------------------
 # Third Party Services Settings
@@ -314,7 +315,7 @@ disqus:
   count: true
 
 # Hypercomments
-#hypercomments_id:
+hypercomments_id: 92035
 
 # Gentie productKey
 #gentie_productKey:
@@ -331,7 +332,7 @@ changyan:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
+#livere_uid: xxxxxxx
 
 # Baidu Share
 # Available value:
@@ -501,7 +502,7 @@ canvas_nest: false
 three_waves: false
 
 # canvas_lines
-canvas_lines: false
+canvas_lines: true
 
 # canvas_sphere
 canvas_sphere: false

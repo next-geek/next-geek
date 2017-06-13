@@ -27,6 +27,20 @@
       <div class="header-inner"> {%- include '_partials/header.swig' %} </div>
     </header>
 
+    {% if isMobile() %}
+        <!-- Suprise ball && Assist ball
+        Shamefully stolen from https://github.com/idhyt/hexo-theme-next -->
+    {% else %}
+      {% if (theme.suprise.ball and is_home()) %}
+          {% include '_partials/suprise/ball.swig' %}
+      {% endif %}
+
+      {% if (theme.suprise.assist) %}
+        {% include '_partials/suprise/assist.swig' %}
+      {% endif %}
+
+    {% endif %}
+
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
@@ -59,7 +73,9 @@
       </div>
     {% endif %}
 
+
   </div>
+
 
   {% include '_scripts/vendors.swig' %}
   {% include '_scripts/commons.swig' %}

@@ -205,6 +205,12 @@ $(document).ready(function () {
         getMistLineSettings($logoLineBottom, '-100%')
       );
 
+      NexT.utils.isMala() && hasElement([$logoLineTop, $logoLineBottom]) &&
+      sequence.push(
+        getMistLineSettings($logoLineTop, '100%'),
+        getMistLineSettings($logoLineBottom, '-100%')
+      );
+
       hasElement($title) && sequence.push({
         e: $title,
         p: {opacity: 1, top: 0},

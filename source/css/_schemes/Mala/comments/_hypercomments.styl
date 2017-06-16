@@ -41,6 +41,12 @@
 .hc__message__popup__item:hover
   background rgba(67, 220, 183, 0.6) !important
 
+.hc__reply__attach
+  .hc__message__popup__item span
+    color $grey-white !important
+    &:hover
+      color red !important
+
 .hc__message__popup__item__txt
   color $grey-white !important
 
@@ -61,3 +67,6 @@
 
 .hc__nick
   color $comment-nick-color !important
+
+.hc__footer__wrapf[active=true] input
+  color $comment-email-text-color

@@ -45,4 +45,4 @@ IF YOU DON'T FILL OUT THE FOLLOWING INFORMATION WE MIGHT CLOSE YOUR ISSUE WITHOU
 [ ] Pisces
 ```
 
-### Other Information <!-- (Like Browser, System, Screenshots) -->
+### Other Information <!-- (Like Browser, System, Screenshots) --

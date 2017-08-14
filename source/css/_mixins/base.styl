@@ -4,6 +4,30 @@ the-transition() {
   transition-delay: 0s;
 }
 
+the-transition-ease-in() {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  transition-delay: 0s;
+}
+
+the-transition-ease-out() {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+}
+
+mobile-smallest() {
+  @media (max-width: 413px) {
+    {block}
+  }
+}
+
+mobile-small() {
+  @media (max-width: 567px) {
+    {block}
+  }
+}
+
 mobile() {
   @media (max-width: 767px) {
     {block}
@@ -42,6 +66,10 @@ transform() {
 
 hide() {
   display: none !important;
+}
+
+show() {
+  display: block !important;
 }
 
 fixbutton() {

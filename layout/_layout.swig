@@ -19,7 +19,11 @@
     {% set container_class = container_class + 'sidebar-position-' + theme.sidebar.position %}
   {% endif %}
 
-  <div class="{{ container_class }} {% block page_class %}{% endblock %} ">
+  {% set tag_class = "no-tag-cloud-post" %}
+  {% if page.type === "tags" or page.type === "categories" %}
+    {% set tag_class = "tag-categories-post" %}
+  {% endif %}
+  <div class="{{ container_class }} {% block page_class %}{% endblock %} {{ tag_class }} ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">

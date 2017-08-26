@@ -19,7 +19,7 @@
     {% set container_class = container_class + 'sidebar-position-' + theme.sidebar.position %}
   {% endif %}
 
-  {% set tag_class = "no-tag-cloud-post" %}
+  {% set tag_class = "no-tag-categories-post" %}
   {% if theme.scheme === 'Mala' and page.type === 'tags' or page.type ==== 'categories' or page.type === 'about' %}
     {% set tag_class = "tag-categories-post" %}
   {% endif %}

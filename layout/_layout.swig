@@ -20,7 +20,7 @@
   {% endif %}
 
   {% set tag_class = "no-tag-cloud-post" %}
-  {% if page.type === "tags" or page.type === "categories" %}
+  {% if theme.scheme === 'Mala' %}
     {% set tag_class = "tag-categories-post" %}
   {% endif %}
   <div class="{{ container_class }} {% block page_class %}{% endblock %} {{ tag_class }} ">

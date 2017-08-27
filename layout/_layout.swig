@@ -19,9 +19,11 @@
     {% set container_class = container_class + 'sidebar-position-' + theme.sidebar.position %}
   {% endif %}
 
-  {% set tag_class = "no-tag-cloud-post" %}
-  {% if page.type === "tags" or page.type === "categories" %}
-    {% set tag_class = "tag-categories-post" %}
+  {% set tag_class = "no-tag-categories-post" %}
+  {% if theme.scheme === 'Mala' %}
+    {% if page.type === 'tags' or page.type ==== 'categories' or page.type === 'about' %}
+      {% set tag_class = "tag-categories-post" %}
+    {% endif %}
   {% endif %}
   <div class="{{ container_class }} {% block page_class %}{% endblock %} {{ tag_class }} ">
     <div class="headband"></div>

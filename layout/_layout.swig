@@ -20,8 +20,10 @@
   {% endif %}
 
   {% set tag_class = "no-tag-categories-post" %}
-  {% if theme.scheme === 'Mala' and page.type === 'tags' or page.type ==== 'categories' or page.type === 'about' %}
-    {% set tag_class = "tag-categories-post" %}
+  {% if theme.scheme === 'Mala' %}
+    {% if page.type === 'tags' or page.type ==== 'categories' or page.type === 'about' %}
+      {% set tag_class = "tag-categories-post" %}
+    {% endif %}
   {% endif %}
   <div class="{{ container_class }} {% block page_class %}{% endblock %} {{ tag_class }} ">
     <div class="headband"></div>

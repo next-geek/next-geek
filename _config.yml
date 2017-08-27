@@ -127,7 +127,7 @@ social_icons:
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-  avatar: 128.199.237.248/avatar.jpg
+#  avatar: https://catchdream.me/avatar.jpg
  # avatar: /images/avatar.jpg
  # avatar: /uploads/avatar.jpg
 

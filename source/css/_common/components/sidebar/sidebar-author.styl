@@ -6,59 +6,22 @@
   height: $site-author-image-height;
   border: $site-author-image-border-width solid $site-author-image-border-color;
 
-  //custom style
-  border-radius: 80px;
-  -webkit-border-radius: 80px;
-  -moz-border-radius: 80px;
-  box-shadow: inset 0 -1px 0 #333sf;
+  /* start*/
+  border-radius: 50%
+  webkit-transition: 1.4s all;
+  moz-transition: 1.4s all;
+  ms-transition: 1.4s all;
+  transition: 1.4s all;
+  /* end */
   }
 
-  /* 设置循环动画部分 [animation: (play)动画名称 (2s)动画播放时长单位秒或微秒 (ase-out)动画播放的速度曲线为以低速结束
-    (1s)等待1秒然后开始动画 (1)动画播放次数(infinite为循环播放) ]*/
-
-
-  /* 鼠标经过头像旋转360度 */
-  -webkit-transition: -webkit-transform 1.0s ease-out;
-  -moz-transition: -moz-transform 1.0s ease-out;
-  transition: transform 1.0s ease-out;
-  }
-
-  img:hover {
-    /* 鼠标经过停止头像旋转
-    -webkit-animation-play-state:paused;
-    animation-play-state:paused;*/
-
-    /* 鼠标经过头像旋转360度 */
-    -webkit-transform: rotatez(360deg);
-    -moz-transform: rotatez(360deg);
-    transform: rotatez(360deg);
-  }
-
-  /* z 轴旋转动画 */
-  @-webkit-keyframes play {
-    0% {
-      -webkit-transform: rotatez(0deg);
-    }
-    100% {
-      -webkit-transform: rotatez(-360deg);
-    }
-  }
-  @-moz-keyframes play {
-    0% {
-      -moz-transform: rotatez(0deg);
-    }
-    100% {
-      -moz-transform: rotatez(-360deg);
-    }
-  }
-  @keyframes play {
-    0% {
-      transform: rotatez(0deg);
-    }
-    100% {
-      transform: rotatez(-360deg);
-    }
-
+  /* start */
+  .site-author-image:hover {
+    background-color: #55DAE1;
+    webkit-transform: rotate(360deg) scale(1.1);
+    moz-transform: rotate(360deg) scale(1.1);
+    ms-transform: rotate(360deg) scale(1.1);
+    transform: rotate(360deg) scale(1.1);
   }
 
 

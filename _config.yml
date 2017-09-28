@@ -91,8 +91,12 @@ scheme: Mala
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
+social:
   #LinkLabel: Link
+    Github: https://github.com/HanielF
+    E-Mail: hanielxx@outlook.com
+    Twitter: https://twitter.com/Haniel_xx  
+
 
 # Social Links Icons
 # Icon Mapping:

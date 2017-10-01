@@ -85,6 +85,7 @@
         <div class="links-of-author motion-element">
           {% if theme.social %}
             {% for name, link in theme.social %}
+            <div style="width:95px; display:inline-block;text-align:left;margin-left:10px;">
               <span class="links-of-author-item">
                 <a href="{{ link }}" target="_blank" title="{{ name }}">
                   {% if theme.social_icons.enable %}
@@ -95,6 +96,7 @@
                     {% endif %}
                 </a>
               </span>
+              </div>
             {% endfor %}
           {% endif %}
         </div>

@@ -21,7 +21,7 @@
 
   {% set tag_class = "no-tag-categories-post" %}
   {% if theme.scheme === 'Mala' %}
-    {% if page.type === 'tags' or page.type ==== 'categories' or page.type === 'about' or page.type === 'archive' %}
+    {% if page.type === 'tags' or page.type ==== 'categories' or page.type === 'about' or page.type === 'archives' %}
       {% set tag_class = "tag-categories-post" %}
     {% endif %}
   {% endif %}

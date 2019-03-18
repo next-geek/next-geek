@@ -95,9 +95,7 @@ social:
 
   #LinkLabel: Link
   Github: https://github.com/HanielF
-  E-Mail: hanielxx@outlook.com
-  Twitter: https://twitter.com/Haniel_xx  
-  FB Page: https://m.facebook.com/haniel.farnsworth
+  Twitter: https://twitter.com/Haniel_xx
 
 
 # Social Links Icons
@@ -107,7 +105,7 @@ social:
 #   When an globe mask icon presenting up means that the item has no mapping icon.
 social_icons:
   enable: true
-  icons_only: false 
+  icons_only: false
   transition: false
   # Icon Mappings.
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
@@ -212,9 +210,9 @@ post_meta:
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
   item_text: true
-  wordcount: true 
+  wordcount: true
   min2read: true
-  totalcount: true 
+  totalcount: true
   separated_meta: true
 
 # Wechat Subscriber
@@ -349,7 +347,7 @@ changyan:
 suprise:
   ball: true
 
-# Valine. 
+# Valine.
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://github.com/xCss/Valine
 valine:

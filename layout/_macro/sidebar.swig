@@ -84,9 +84,10 @@
 
         <div class="links-of-author motion-element">
           {% if theme.social %}
-            {% if theme.scheme == 'Mala' %}
-                {% for name, link in theme.social %}
+            {% for name, link in theme.social %}
+              {% if theme.scheme == 'Mala' %}
                 <div style="width:95px; display:inline-block;text-align:left;margin-left:10px;">
+              {% endif %}
                   <span class="links-of-author-item">
                     <a href="{{ link }}" target="_blank" title="{{ name }}">
                       {% if theme.social_icons.enable %}
@@ -97,23 +98,10 @@
                         {% endif %}
                     </a>
                   </span>
-                  </div>
-                {% endfor %}
-            {% else %}
-                {% for name, link in theme.social %}
-                  <span class="links-of-author-item">
-                    <a href="{{ link }}" target="_blank" title="{{ name }}">
-                      {% if theme.social_icons.enable %}
-                        <i class="fa fa-fw fa-{{ theme.social_icons[name] | default('globe') | lower }}"></i>
-                      {% endif %}
-                        {% if not theme.social_icons.icons_only %}
-                          {{ name }}
-                        {% endif %}
-                    </a>
-                  </span>
-                {% endfor %}
-            {% endif %}
-          {% endif %}
+              {% if theme.scheme == 'Mala' %}
+                </div>
+              {% endif %}
+            {% endfor %}
         </div>
 
         {% set cc = {'by': 1, 'by-nc': 1, 'by-nc-nd': 1, 'by-nc-sa': 1, 'by-nd': 1, 'by-sa': 1, 'zero': 1} %}

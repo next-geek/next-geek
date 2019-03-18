@@ -335,16 +335,13 @@
     <footer class="post-footer">
       {% if post.tags and post.tags.length and not is_index %}
         <div class="post-tags">
-
-        {% if theme.scheme == 'Mala' %}
           {% for tag in post.tags %}
-          <a href="{{ url_for(tag.path) }}" rel="tag"><i class="fa fa-tag"></i> {{ tag.name }}</a>
+            {% if theme.scheme == 'Mala' %}
+              <a href="{{ url_for(tag.path) }}" rel="tag"><i class="fa fa-tag"></i> {{ tag.name }}</a>
+            {% else %}
+              <a href="{{ url_for(tag.path) }}" rel="tag">#{{ tag.name }}</a>
+            {% endif %}
           {% endfor %}
-        {% else %}
-          {% for tag in post.tags %}
-          <a href="{{ url_for(tag.path) }}" rel="tag">#{{ tag.name }}</a>
-          {% endfor %}
-        {% endif %}
 
         </div>
       {% endif %}

@@ -47,8 +47,8 @@ index_with_subtitle: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  categories: /categories/
-  about: /about/
+  #categories: /categories/
+  #about: /about/
   archives: /archives/
   tags: /tags/
   #sitemap: /sitemap.xml
@@ -91,12 +91,8 @@ scheme: Mala
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-social:
-
+#social:
   #LinkLabel: Link
-  Github: https://github.com/HanielF
-  Twitter: https://twitter.com/Haniel_xx
-
 
 # Social Links Icons
 # Icon Mapping:
@@ -131,9 +127,7 @@ social_icons:
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-#  avatar: https://catchdream.me/avatar.jpg
- # avatar: /images/avatar.jpg
- # avatar: /uploads/avatar.jpg
+#avatar:
 
 # Table Of Contents in the Sidebar
 toc:
@@ -153,8 +147,8 @@ toc:
 
 sidebar:
   # Sidebar Position, available value: left | right
-  #position: left
-  position: right
+  position: left
+  #position: right
 
   # Sidebar Display, available value:
   #  - post    expand on posts automatically. Default.
@@ -174,7 +168,7 @@ sidebar:
   b2t: false
 
   # Scroll percent label in b2t button
-  scrollpercent: true
+  scrollpercent: false
 
   # Enable sidebar on narrow view
   onmobile: false
@@ -188,7 +182,7 @@ sidebar:
 scroll_to_more: true
 
 # Automatically saving scroll position on each post/page in cookies.
-save_scroll: true
+save_scroll: false
 
 # Automatically excerpt description in homepage as preamble text.
 excerpt_description: true
@@ -210,9 +204,9 @@ post_meta:
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
   item_text: true
-  wordcount: true
-  min2read: true
-  totalcount: true
+  wordcount: false
+  min2read: false
+  totalcount: false
   separated_meta: true
 
 # Wechat Subscriber
@@ -229,7 +223,7 @@ post_wordcount:
 
 # Declare license on posts
 post_copyright:
-  enable: true
+  enable: fals
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
@@ -256,7 +250,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: night eighties
+highlight_theme: normal
 
 # ---------------------------------------------------------------
 # Font Settings
@@ -502,7 +496,7 @@ calendar:
 
 # Algolia Search
 algolia_search:
-  enable: true
+  enable: false
   hits:
     per_page: 10
   labels:
@@ -594,7 +588,7 @@ canvas_nest: false
 three_waves: false
 
 # canvas_lines
-canvas_lines: true
+canvas_lines: false
 
 # canvas_sphere
 canvas_sphere: false

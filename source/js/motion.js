@@ -54,6 +54,7 @@ NexT.motion.middleWares = {
     pushToSequence('.header');
     CONFIG.scheme === 'Mist' && getMistLineSettings('.logo-line');
     CONFIG.scheme === 'Muse' && pushToSequence('.custom-logo-image');
+    CONFIG.scheme === 'Mala' && pushToSequence('.custom-logo-image');
     pushToSequence('.site-title');
     pushToSequence('.site-brand-container .toggle', true);
     pushToSequence('.site-subtitle');

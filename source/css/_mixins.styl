@@ -110,7 +110,7 @@ main-container() {
 
 sidebar-toggle-position($reverse = false) {
   $condition = hexo-config('sidebar.position') == 'right';
-  if (($scheme == 'Muse') || ($scheme == 'Mist')) {
+  if (($scheme == 'Muse') || ($scheme == 'Mist') || ($scheme == 'Mala')) {
     $condition = $condition == $reverse;
   }
   if ($condition) {

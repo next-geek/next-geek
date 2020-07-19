@@ -8,7 +8,9 @@
 {% block content %}
 
   {%- for post in page.posts.toArray() %}
-    {{ partial('_macro/post.njk', {post: post, is_index: true}) }}
+    {% if post.lang == page.lang %}
+        {{ partial('_macro/post.njk', {post: post, is_index: true}) }}
+    {% endif %}
   {%- endfor %}
 
   {% include '_partials/pagination.njk' %}

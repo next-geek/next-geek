@@ -1,0 +1,28 @@
+.theme-link
+  display inline-block
+  position relative
+  color $gray
+  border-bottom none
+  line-height 2
+  vertical-align top
+  &::before 
+    content ""
+    position absolute
+    width 100%
+    height 2px
+    bottom 3px
+    left 0
+    background-color $
+    visibility hidden
+    transform scaleX(0)
+    the-transition()
+
+  &:hover::before 
+    visibility visible
+    transform scaleX(1)
+
+  &:hover
+    background none
+    color $gray-lighter !important
+  .fa
+    font-size 16px

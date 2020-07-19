@@ -1,0 +1,202 @@
+// Post Expanded
+// --------------------------------------------------
+.posts-expand {
+  padding-top: 0;
+
+  .post-title,
+  .post-meta {
+    text-align: $site-meta-text-align;
+    +mobile() { text-align: center; }
+  }
+  .post-eof { display: none; }
+
+  .post { margin-top: 120px; }
+  .post:first-child { margin-top: 0; }
+
+  .post-meta {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    .post-category a{
+      color: $green-brighter;
+      :hover {
+         color: $brown-yellow;
+      }
+    }
+  }
+
+  .post-title {
+    position: relative;
+    font-size: $font-size-headings-base;
+    font-weight: 400;
+    +mobile() { font-size: $font-size-headings-smaller; }
+    +desktop-large() { font-size: $font-size-headings-large; }
+  }
+  .post-title:hover:before { background: $black-deep; }
+
+  .post-body img { margin: 0; }
+
+  .post-tags {
+    text-align: left;
+    a {
+      padding: 1px 5px;
+      //background: $whitesmoke;
+      background: $post-tags-bg-color;
+      color: $post-tags-text-color;
+      border-bottom: none;
+    }
+    a:hover { background: $grey-light; }
+  }
+
+  //tag cloud
+  .tag-cloud {
+    .tag-cloud-title {
+      &::selection {
+        background: none;
+     }
+    }
+  }
+
+  .post-nav { margin-top: 40px; }
+}
+
+.post-button {
+  margin-top: 20px;
+  text-align: left;
+
+  a {
+    margin: 0 8px 8px 0 !important;
+    padding: 0;
+    font-size: $font-size-base;
+    color: $grey-dim;
+    background: none;
+    border: none;
+    border-bottom: 2px solid $grey-dim;
+    transition-property: border;
+
+    +mobile() { font-size: $font-size-small; }
+    +desktop-large() { font-size: $font-size-large; }
+
+
+    &:hover { border-bottom-color: $black-deep; }
+  }
+}
+
+//read more (maybe useless?)
+.post-more-link {
+    margin-top: 20px;
+    text-align: left;
+
+    a {
+        padding: 0;
+        font-size: 16px;
+        color: $grey-dim;
+        background: none;
+        border: none;
+        border-bottom: 2px solid $grey-dim;
+        transition-property: border;
+
+        &:hover { border-bottom-color: $black-deep; }
+    }
+}
+
+// Post title link
+.posts-expand .post-title-link
+  color $gray-lighter
+  &::before
+    background-color: $blue-bright
+
+
+// Post body CSS
+.post-body a
+  display inline-block
+  position relative
+  color $post-body-link-color
+  border-bottom none
+  line-height 2
+  vertical-align top
+  &::before 
+    content ""
+    position absolute
+    width 100%
+    height 2px
+    bottom 3px
+    left 0
+    background-color $blue-bright
+    visibility hidden
+    transform scaleX(0)
+    the-transition()
+
+  &:hover::before 
+    visibility visible
+    transform scaleX(1)
+
+  &:hover
+    background none
+    color $gray-lighter
+  .fa
+    font-size 16px
+
+// Read moore button
+.post-button .btn
+  font-size 16px
+  display inline-block
+  position relative
+  color $grey-dim
+  border-bottom none
+  line-height 1.2
+  vertical-align top
+  &::before 
+    content ""
+    position absolute
+    width 100%
+    height 2px
+    bottom 0
+    left 0
+    background-color $blue-bright
+    visibility hidden
+    transform scaleX(0)
+    the-transition()
+
+  &:hover::before 
+    visibility visible
+    transform scaleX(1)
+
+  &:hover
+    background none
+    color $gray-lighter
+  .fa
+    font-size 16px
+
+// Tag cloud h1
+.post-header h1.post-title
+  &::selection
+    background none
+
+.tag-cloud a
+  display inline-block
+  position relative
+  color $post-body-link-color !important
+  border-bottom none
+  line-height 1.6
+  vertical-align top
+  &::before 
+    content ""
+    position absolute
+    width 100%
+    height 2px
+    bottom 0
+    left 0
+    background-color $blue-bright
+    visibility hidden
+    transform scaleX(0)
+    the-transition()
+
+  &:hover::before 
+    visibility visible
+    transform scaleX(1)
+
+  &:hover
+    background none
+    color $gray-lighter
+  .fa
+    font-size 16px

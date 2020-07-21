@@ -26,6 +26,16 @@
       +mobile() {
         text-align: left;
       }
+
+      &:hover, &.menu-item-active {
+        color: $black-deep;
+        background: $orange-yellow;
+        border-bottom: 1px solid var(--link-hover-color);
+
+        +mobile() {
+          border-bottom: 1px dotted $grey-lighter;
+        }
+      }
     }
 
     .badge {

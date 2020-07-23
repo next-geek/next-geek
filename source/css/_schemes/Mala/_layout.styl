@@ -1,3 +1,21 @@
+// Main
+// --------------------------------------------------
+.main-inner {
+  main-container();
+
+  +mobile() {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.header-inner, .main-inner, .footer-inner {
+  +mobile() {
+    width: auto;
+  }
+}
+
+
 // Tags
 // --------------------------------------------------
 hr {
@@ -43,7 +61,6 @@ hr {
 // Footer layout
 // --------------------------------------------------
 .footer {
-  background: var(--content-bg-color);
   color: var(--text-color);
   padding: 10px 0;
 }

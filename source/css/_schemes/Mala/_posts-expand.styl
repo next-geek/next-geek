@@ -1,9 +1,19 @@
 // Post Expand
 // --------------------------------------------------
+
 .posts-expand {
   &.index {
     .post-title, .post-meta {
       text-align: $site-meta-text-align;
+
+      .post-meta-item a {
+        color: $header-svg-fill-color;
+
+        &:hover {
+          color: $orange-yellow;
+          border-bottom-color: $orange-yellow;
+        }
+      }
 
       +mobile() {
         text-align: center;

@@ -6,15 +6,6 @@
     .post-title, .post-meta {
       text-align: $site-meta-text-align;
 
-      .post-meta-item a {
-        color: $header-svg-fill-color;
-
-        &:hover {
-          color: $orange-yellow;
-          border-bottom-color: $orange-yellow;
-        }
-      }
-
       +mobile() {
         text-align: center;
       }
@@ -23,6 +14,26 @@
     .post-meta {
       margin: 5px 0 20px 0;
     }
+  }
+
+  .post-title .post-title-link {
+    color: $gainsboro;
+    &::before {
+      background: $header-svg-fill-color;
+    }
+  }
+
+  .post-meta-item a {
+    color: $header-svg-fill-color;
+
+    &:hover {
+      color: $orange-yellow;
+      border-bottom-color: $orange-yellow;
+    }
+  }
+
+  .post-header .post-title {
+    color: $gainsboro;
   }
 
   .post-eof {

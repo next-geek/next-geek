@@ -16,6 +16,17 @@
     }
   }
 
+  // for all links style inside .post-expand
+  a {
+    color: $orange-yellow;
+    border-bottom-color: $orange-yellow;
+
+    &:hover {
+      color: $header-svg-fill-color;
+      border-bottom-color: $header-svg-fill-color;
+    }
+  }
+
   .post-title .post-title-link {
     color: $gainsboro;
     &::before {
@@ -25,6 +36,7 @@
 
   .post-meta-item a {
     color: $header-svg-fill-color;
+    border-bottom-color: $text-color;
 
     &:hover {
       color: $orange-yellow;
@@ -81,6 +93,7 @@
     transition-property: border;
 
     &:hover {
+      color: $orange-yellow;
       border-bottom-color: $header-svg-fill-color;
     }
   }

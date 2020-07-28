@@ -78,6 +78,23 @@
   .post-nav {
     margin-top: 40px;
   }
+
+
+  .post-copyright {
+    background: $search-window-background-color;
+    border-left-color: $header-svg-fill-color;
+
+    // post-copyright link color to adapt to its background
+    // TODO: Maybe delete this later
+    a {
+      color: $header-svg-fill-color;
+      border-bottom-color: $header-svg-fill-color;
+      &:hover {
+        color: $orange-yellow;
+        border-bottom-color: $orange-yellow;
+      }
+    }
+  }
 }
 
 .post-button {

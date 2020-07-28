@@ -79,7 +79,6 @@
     margin-top: 40px;
   }
 
-
   .post-copyright {
     background: $search-window-background-color;
     border-left-color: $header-svg-fill-color;
@@ -107,4 +106,21 @@
 
 .headerlink::before {
   color: $header-svg-fill-color;
+}
+
+// Blackquote css
+.blockquote-center {
+  color: $search-header-background-color;
+  font-weight: bolder;
+
+  p {
+    color: $grey-lighter;
+  }
+
+  &::before {
+    border-top-color: $search-header-background-color;
+  }
+  &::after {
+     border-bottom-color: $search-header-background-color;
+  }
 }

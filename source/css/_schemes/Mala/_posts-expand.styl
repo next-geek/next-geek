@@ -18,12 +18,12 @@
 
   // for all links style inside .post-expand
   a {
-    color: $orange-yellow;
-    border-bottom-color: $orange-yellow;
+    color: $header-svg-fill-color;
+    border-bottom-color: $header-svg-fill-color;
 
     &:hover {
-      color: $header-svg-fill-color;
-      border-bottom-color: $header-svg-fill-color;
+      color: $orange-yellow;
+      border-bottom-color: $orange-yellow;
     }
   }
 
@@ -83,17 +83,6 @@
   .post-copyright {
     background: $search-window-background-color;
     border-left-color: $header-svg-fill-color;
-
-    // post-copyright link color to adapt to its background
-    // TODO: Maybe delete this later
-    a {
-      color: $header-svg-fill-color;
-      border-bottom-color: $header-svg-fill-color;
-      &:hover {
-        color: $orange-yellow;
-        border-bottom-color: $orange-yellow;
-      }
-    }
   }
 }
 
@@ -107,10 +96,9 @@
     border-bottom: 2px solid $orange-yellow;
     color: $orange-yellow;
     padding: 0;
-    transition-property: border;
 
     &:hover {
-      color: $orange-yellow;
+      color: $header-svg-fill-color;
       border-bottom-color: $header-svg-fill-color;
     }
   }

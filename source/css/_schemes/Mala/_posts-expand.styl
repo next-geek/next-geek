@@ -17,6 +17,7 @@
   }
 
   // for all links style inside .post-expand
+
   a {
     color: $header-svg-fill-color;
     border-bottom-color: $header-svg-fill-color;
@@ -29,6 +30,7 @@
 
   .post-title .post-title-link {
     color: $gainsboro;
+
     &::before {
       background: $header-svg-fill-color;
     }
@@ -132,7 +134,19 @@ blockquote {
   &::before {
     border-top-color: $search-header-background-color;
   }
+
   &::after {
-     border-bottom-color: $search-header-background-color;
+    border-bottom-color: $search-header-background-color;
+  }
+}
+
+// table style
+tbody tr {
+  &:nth-of-type(odd) {
+    background-color: $table-row-hover-bg-color-dark;
+  }
+
+  &:hover {
+    background: $table-hover-bg-color;
   }
 }

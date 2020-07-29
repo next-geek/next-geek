@@ -20,6 +20,7 @@
           {% block sidebar %}{% endblock %}
         {%- endif %}
       </header>
+      {% include '_partials/suprise-ball/ball.njk' %}
 
       {{ partial('_partials/widgets.njk', {}, {cache: theme.cache.enable}) }}
 

@@ -40,7 +40,7 @@ hexo.extend.filter.register('after_generate', () => {
     hexo.route.remove('js/local-search.js');
   }
 
-  if (theme.scheme === 'Muse' || theme.scheme === 'Mist') {
+  if (theme.scheme === 'Muse' || theme.scheme === 'Mist' || theme.scheme === 'Mala') {
     hexo.route.remove('js/schemes/pisces.js');
   } else if (theme.scheme === 'Pisces' || theme.scheme === 'Gemini') {
     hexo.route.remove('js/schemes/muse.js');

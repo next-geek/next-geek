@@ -1,0 +1,74 @@
+// Main layout
+// --------------------------------------------------
+.main-inner {
+  main-container();
+
+  +mobile() {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.header-inner, .main-inner, .footer-inner {
+  +mobile() {
+    width: auto;
+  }
+}
+
+
+// Tags layout
+// --------------------------------------------------
+hr {
+  height: 2px;
+  margin: 20px 0;
+}
+
+// Components layout
+// --------------------------------------------------
+.btn {
+  padding: 0 10px;
+}
+
+.headband {
+  display: none;
+}
+
+// Page - Container - layout
+// --------------------------------------------------
+.main-inner {
+  padding-bottom: 80px;
+}
+
+.content {
+  padding-top: 80px;
+
+  +mobile() {
+    padding-top: 60px;
+  }
+}
+
+// Pagination layout
+// --------------------------------------------------
+.pagination {
+  text-align: left;
+
+  +mobile() {
+    margin: 80px 10px 0;
+    text-align: center;
+  }
+}
+
+// Footer layout
+// --------------------------------------------------
+.footer {
+  color: var(--text-color);
+  padding: 10px 0;
+}
+
+.footer-inner {
+  text-align: left;
+
+  +mobile() {
+    text-align: center;
+  }
+}

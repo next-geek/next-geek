@@ -1,0 +1,152 @@
+// Post Expand
+// --------------------------------------------------
+
+.posts-expand {
+  &.index {
+    .post-title, .post-meta {
+      text-align: $site-meta-text-align;
+
+      +mobile() {
+        text-align: center;
+      }
+    }
+
+    .post-meta {
+      margin: 5px 0 20px 0;
+    }
+  }
+
+  // for all links style inside .post-expand
+
+  a {
+    color: $header-svg-fill-color;
+    border-bottom-color: $header-svg-fill-color;
+
+    &:hover {
+      color: $orange-yellow;
+      border-bottom-color: $orange-yellow;
+    }
+  }
+
+  .post-title .post-title-link {
+    color: $gainsboro;
+
+    &::before {
+      background: $header-svg-fill-color;
+    }
+  }
+
+  .post-meta-item a {
+    color: $header-svg-fill-color;
+    border-bottom-color: $text-color;
+
+    &:hover {
+      color: $orange-yellow;
+      border-bottom-color: $orange-yellow;
+    }
+  }
+
+  .post-header .post-title {
+    color: $gainsboro;
+  }
+
+  .post-eof {
+    display: none;
+  }
+
+  .post-block:not(:first-child) {
+    margin-top: 120px;
+  }
+
+  .post-title, .post-meta {
+    text-align: center;
+  }
+
+  .post-tags {
+    text-align: left;
+
+    a {
+      background: $header-svg-fill-color;
+      color: $black-pure;
+      border-bottom: none;
+      padding: 1px 5px;
+
+      &:hover {
+        background: $orange-yellow;
+      }
+    }
+  }
+
+  .post-nav {
+    margin-top: 40px;
+  }
+
+  .post-copyright {
+    background: $search-window-background-color;
+    border-left-color: $header-svg-fill-color;
+  }
+}
+
+.post-button {
+  margin-top: 20px;
+  text-align: left;
+
+  .btn {
+    background: none;
+    border: 0;
+    border-bottom: 2px solid $orange-yellow;
+    color: $orange-yellow;
+    padding: 0;
+
+    &:hover {
+      color: $header-svg-fill-color;
+      border-bottom-color: $header-svg-fill-color;
+    }
+  }
+}
+
+
+.headerlink::before {
+  color: $header-svg-fill-color;
+}
+
+// <code> css
+code {
+  color: $code-font-color;
+  background: $code-background-color;
+}
+
+// Blockquote css
+blockquote {
+  color: $blockquote-bg-color;
+  border-left-color: $search-header-background-color;
+}
+
+// Blockquote center css
+.blockquote-center {
+  color: $search-header-background-color;
+  font-weight: bolder;
+
+  p {
+    color: $grey-lighter;
+  }
+
+  &::before {
+    border-top-color: $search-header-background-color;
+  }
+
+  &::after {
+    border-bottom-color: $search-header-background-color;
+  }
+}
+
+// table style
+tbody tr {
+  &:nth-of-type(odd) {
+    background-color: $table-row-hover-bg-color-dark;
+  }
+
+  &:hover {
+    background: $table-hover-bg-color;
+  }
+}

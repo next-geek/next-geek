@@ -1,0 +1,40 @@
+// Post collapse
+// --------------------------------------------------
+
+.posts-collapse {
+
+  &::before {
+    background: $header-svg-fill-color;
+  }
+  // archive bar css
+  .collection-title::before {
+    border-color: $grey;
+  }
+
+  // for all links style inside .post-expand
+  .post-title a {
+    color: $header-svg-fill-color;
+
+    &:hover {
+      color: $orange-yellow;
+    }
+  }
+
+
+  .post-header {
+    border-bottom-color: $header-svg-fill-color;
+
+    &::before {
+      border-color: $grey;
+    }
+
+    &:hover {
+      border-bottom-color: $orange-yellow;
+
+      &::before {
+        background: $header-svg-fill-color;
+      }
+    }
+  }
+}
+

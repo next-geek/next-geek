@@ -15,6 +15,18 @@
 .gt-container .gt-meta .gt-popup {
   background: $search-window-background-color;
   border-color: $comment-border-color;
+
+  .gt-action.is--active {
+    color: #e08d8d;
+
+    &:hover {
+      color: #d8d2d2;
+    }
+
+    &::before {
+      background: $search-header-background-color;
+    }
+  }
 }
 
 // textarea
@@ -28,6 +40,7 @@
   color: $black-pure;
   background-color: $comment-textarea-bg-color;
   border-color: $black-dim;
+
   &:hover {
     background-color: $comment-textarea-bg-color;
     border-color: $header-svg-fill-color;

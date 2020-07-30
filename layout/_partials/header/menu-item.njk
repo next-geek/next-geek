@@ -2,7 +2,12 @@
 
   {%- set itemURL = value.split('||')[0] | trim %}
   {%- if not itemURL.startsWith('http') %}
-    {%- set itemURL = itemURL | replace('//', '/') %}
+    {# set default links for multilanguage support #}
+    {%- if config.language[0] == page.lang %}
+      {%- set itemURL = itemURL | replace('//', '/') %}
+    {%- else %}
+      {%- set itemURL = page.lang + itemURL | replace('//', '/') %}
+    {%- endif %}
   {%- endif %}
   <li class="menu-item menu-item-{{ itemName | replace(' ', '-') }}">
 

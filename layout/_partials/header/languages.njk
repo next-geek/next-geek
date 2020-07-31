@@ -1,4 +1,5 @@
-{%- if theme.language_switcher and languages.length > 1 %}
+{%- if theme.language_switcher and languages.length > 1 and not is_post() %}
+  {# cannot use `CONFIG.post.isPost` here #}
   <div class="languages animated fadeInDown">
     <label class="lang-select-label">
       <i class="fa fa-language"></i>

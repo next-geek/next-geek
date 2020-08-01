@@ -34,6 +34,13 @@
 
     <footer class="footer">
       <div class="footer-inner">
+        {%- if theme.scheme == 'Mala' and is_home() %}
+          <style>
+            .footer-inner {
+              text-align: left;
+            }
+          </style>
+        {%- endif %}
         {#{% include '_partials/languages.njk' %}#}
         {{ partial('_partials/footer.njk', {}, {cache: theme.cache.enable}) }}
         {{ partial('_third-party/statistics/index.njk', {}, {cache: theme.cache.enable}) }}

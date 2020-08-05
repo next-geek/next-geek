@@ -150,3 +150,20 @@ tbody tr {
     background: $table-hover-bg-color;
   }
 }
+
+// Pagination style
+.pagination {
+  border-top-color: $header-svg-fill-color;
+
+  .page-number, .prev, .next {
+    border-top-color: $search-header-background-color;
+    &:hover {
+      border-top-color: $orange-yellow;
+    }
+  }
+  .page-number.current {
+    background: $orange-yellow;
+    border-color: $search-header-background-color;
+    color: $black-deep;
+  }
+}

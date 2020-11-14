@@ -46,13 +46,17 @@
   <div class="powered-by">
     {%- set next_site = 'https://theme-next.js.org' %}
     {%- if theme.scheme !== 'Gemini' %}
-      {%- if theme.scheme !== 'Mala' %}
-        {%- set next_site = 'https://theme-next.js.org/' + theme.scheme | lower + '/' %}
-      {%- else %}
+      {%- if theme.scheme == 'Mala' %}
         {%- set next_site = 'https://github.com/next-geek/next-geek' %}
+      {%- else %}
+        {%- set next_site = 'https://theme-next.js.org/' + theme.scheme | lower + '/' %}
       {%- endif %}
     {%- endif %}
-    {{- __('footer.powered', next_url('https://hexo.io', 'Hexo', {class: 'theme-link'}) + ' & ' + next_url(next_site, 'NexT.' + theme.scheme, {class: 'theme-link'})) }}
+    {%- if theme.scheme == 'Mala' %}
+      {{- __('footer.powered', next_url('https://hexo.io', 'Hexo', {class: 'theme-link'}) + ' & ' + next_url(next_site, 'Next-geek', {class: 'theme-link'})) }}
+    {%- else %}
+      {{- __('footer.powered', next_url('https://hexo.io', 'Hexo', {class: 'theme-link'}) + ' & ' + next_url(next_site, 'NexT.' + theme.scheme, {class: 'theme-link'})) }}
+    {%- endif %}
   </div>
 {%- endif %}
 

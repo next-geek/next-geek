@@ -29,11 +29,10 @@
   }
 }
 
-// textarea
+// about-to-comment textarea
 .gt-container .gt-header-comment .gt-header-textarea {
   background-color: $comment-textarea-bg-color;
 }
-
 
 // preview button
 .gt-container .gt-header-controls .gt-btn-preview {
@@ -44,6 +43,29 @@
   &:hover {
     background-color: $comment-textarea-bg-color;
     border-color: $header-svg-fill-color;
+  }
+}
+
+// commented content
+.gt-container .gt-comment-admin .gt-comment-content {
+  // must use `!important` to override cdn gittalk css due to bad design of gittalk
+  background-color: $transparent-color !important;
+
+  border-radius: 5px;
+
+  &:hover {
+    box-shadow: 0 0.625em 3.75em 0 $header-svg-fill-color;
+  }
+}
+
+.gt-comment-content .markdown-body {
+  // must use `!important` to override cdn gittalk css due to bad design of gittalk
+  p {
+    color: var(--text-color) !important;
+  }
+
+  a:hover {
+    color: $orange-yellow;
   }
 }
 
